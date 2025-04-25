@@ -1,0 +1,79 @@
+
+
+ <script>
+      console.log("Using session storeg");
+
+      sessionStorage.setItem("name", "Tagin");
+      sessionStorage.city = "Dhaka";
+      console.log(sessionStorage.length);
+      const name = sessionStorage.getItem("name");
+      console.log(`The storeg name ${name}`);
+      const city = sessionStorage.getItem("city");
+      console.log(`The storeg city ${city}`);
+</script>
+
+
+
+<script>
+      const dbName = "myDatabase";
+      const storeName = "myStore";
+
+      function openDB() {
+        const request = indexedDB.open(dbName, 1);
+
+        request.onerror = function (event) {
+          console.error("Database error:", event.target.error);
+        };
+
+        request.onsuccess = function (event) {
+          const db = event.target.result;          
+          addData(db);
+          getData(db);
+        };
+
+        request.onupgradeneeded = function (event) {
+          const db = event.target.result;
+          const objectStore = db.createObjectStore(storeName, {
+            keyPath: "id",
+          });
+        };
+      }
+
+      function addData(db) {
+        const transaction = db.transaction(storeName, "readwrite");
+        const objectStore = transaction.objectStore(storeName);
+
+        objectStore.add({
+          id: 1,
+          name: "Tagin",
+          age: 25,
+        });
+        objectStore.add({ id: 2, name: "Mim", age: 26 });
+      }
+
+      function getData(db) {
+        const transaction = db.transaction(storeName, "readonly");
+        const objectStore = transaction.objectStore(storeName);
+
+        const getAllRequest = objectStore.getAll();
+
+        getAllRequest.onsuccess = function (event) {
+          const data = event.target.result;
+          console.log(data); 
+        };
+      }
+
+      openDB();
+    </script>
+
+
+<script>
+      console.log("Cresting local storeg");
+      localStorage.setItem("name", "Tagin");
+      localStorage.city = "Dhaka";
+      console.log(localStorage.length);
+      const name = localStorage.getItem("name");
+      console.log(`The storeg name ${name}`);
+      const city = localStorage.getItem("city");
+      console.log(`The storeg city ${city}`);
+</script>

@@ -1,0 +1,121 @@
+
+<script>
+      console.log("Adding_Days_To_Date");
+
+      const today = new Date();
+      const days = today.getDate();
+      console.log(days);
+      today.setDate(days + 20);
+      console.log(today);
+</script>
+
+
+ <script>
+      console.log("Comparing_Dates");
+      console.log("oldDate is 2020-10-20");
+      console.log("newDate is 2024-10-20");
+
+      const oldDate = new Date(2020, 10, 20);
+      const newDate = new Date(2024, 10, 20);
+      console.log("Is newdate greater then oldDate");
+      if (newDate > oldDate) {
+        console.log(true);
+      } else {
+        console.log(false);
+      }
+      console.log("Is olddate greater then newDate");
+      if (newDate < oldDate) {
+        console.log(true);
+      } else {
+        console.log(false);
+      }
+      console.log("Difference between old and new date in days");
+      const differenceInMiliseconds = newDate - oldDate;
+      const milisecondsPerDays = 24 * 60 * 60 * 1000;
+      let differenceInDays = differenceInMiliseconds / milisecondsPerDays;
+      differenceInDays = Math.trunc(differenceInDays);
+      console.log(differenceInDays);
+</script>
+
+
+    <script>
+      console.log("Date_To_String");
+      const date = new Date(2024, 0, 1, 10, 30);
+
+      let dateString;
+
+      dateString = date.toString();
+      console.log(dateString);
+
+      dateString = date.toTimeString();
+      console.log(dateString);
+
+      dateString = date.toISOString();
+      console.log(dateString);
+
+      dateString = date.toUTCString();
+      console.log(dateString);
+
+      dateString = date.toDateString();
+      console.log(dateString);
+
+      dateString = date.toLocaleDateString();
+      console.log(dateString);
+
+      dateString = date.getFullYear().toString().substr(-2);
+      console.log(dateString);
+    </script>
+
+
+ <body>
+    <h1>Date different formating</h1>
+    <p id="datePlase"></p>
+    <p id="datePlase0"></p>
+    <p id="datePlase1"></p>
+    <p id="datePlase2"></p>
+    <p id="datePlase3"></p>
+    <p id="datePlase4"></p>
+
+    <script>
+      console.log("Date in different format");
+
+      const currentDate = (document.getElementById("datePlase").innerHTML =
+        new Date());
+
+      const currentDate1 = (document.getElementById("datePlase1").innerHTML =
+        new Date().getDate());
+
+      const currentDate2 = (document.getElementById("datePlase2").innerHTML =
+        new Date().getMonth());
+
+      const currentDate3 = (document.getElementById("datePlase3").innerHTML =
+        new Date().getFullYear());
+
+      const currentDate4 = (document.getElementById("datePlase4").innerHTML =
+        new Date().getUTCMilliseconds());
+    </script>
+  </body>
+
+  
+<script>
+      console.log("StringToDate");
+
+      const stringDate = "12/31/2024";
+
+      const dateArray = stringDate.split("/");
+      const month = dateArray[0];
+      const day = dateArray[1];
+      const year = dateArray[2];
+
+      const NewDate = new Date(year, month - 1, day);
+      console.log(NewDate);
+
+      const badDate = "12 bananas";
+      const convertedDate = new Date(badDate);
+      if (Number.isNaN(convertedDate)) {
+        console.log("is a date");
+      } else {
+        console.log("is not a date");
+      }
+</script>
+

@@ -1,0 +1,147 @@
+------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div2 {
+        border: 2px solid black;
+        width: 300px;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1" draggable="true" ondragstart="eventDragStartHendler(event)">
+      Drag & Drop into the rectengl
+    </div>
+    <div
+      id="div2"
+      ondrop="dropHendler(event)"
+      ondragover="allowDroping(event)"
+    ></div>
+
+    <script>
+      function allowDroping(e) {
+        e.preventDefault();
+      }
+      function dropHendler(e) {
+        var d = e.dataTransfer.getData("sourceID", e.target.id);
+        e.target.appendChild(document.getElementById(d));
+      }
+      function eventDragStartHendler(e) {
+        console.log(e);
+        e.dataTransfer.setData("sourceID", e.target.id);
+      }
+      function showPosition(position) {
+        x.innerHTML =
+          "Latitude:" +
+          position.coords.latitude +
+          "<br>Longitude:" +
+          position.coords.longitude;
+      }
+    </script>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        background-color: deepskyblue;
+        border: 2px solid black;
+        width: 300px;
+        height: 230px;
+        margin-left: 340px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Click the butten to get your co-ordinates</p>
+      <button onclick="getlocation()">Location</button>
+      <p id="out"></p>
+    </div>
+    <script>
+      var x = document.getElementById("out");
+      /to show result/;
+      function getlocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          x.innerHTML = "Your browser does not support Geolocation";
+        }
+      }
+      function showPosition(position) {
+        x.innerHTML =
+          "Latitude:" +
+          position.coords.latitude +
+          "<br>Longitude:" +
+          position.coords.longitude;
+      }
+
+      function setItem() {
+        if (typeof Storage !== "undefined") {
+          var name = document.getElementById("name").value;
+          localStorage.myName = name;
+        }
+      }
+      function getItem() {
+        if (typeof Storage !== "undefined") {
+          alert((localStorage.myName = name));
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Step 1.Enter your name</p>
+    <input type="text" id="name" />
+    <p>Step 2.Set your name to the local storeg:</p>
+    <input onclick="setItem()" type="button" value="Save" />
+    <p>Step 3. Open the webpage in other tab.</p>
+    <p>Step 4. Get data from local storeg</p>
+    <input onclick="getItem()" type="button" value="Retrieve" /><br />
+    <p>Step 5. Open the page again to see it again</p>
+
+    <script>
+      function allowDroping(e) {
+        e.preventDefault();
+      }
+      function dropHendler(e) {
+        var d = e.dataTransfer.getData("sourceID", e.target.id);
+        e.target.appendChild(document.getElementById(d));
+      }
+      function eventDragStartHendler(e) {
+        console.log(e);
+        e.dataTransfer.setData("sourceID", e.target.id);
+      }
+    </script>
+  </body>
+</html>
+
+
+------------------------------------------------------------------------------------

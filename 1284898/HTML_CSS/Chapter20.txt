@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes my-anumetion {
+        50% {
+          background-color: red;
+        }
+
+        20% {
+          background-color: green;
+        }
+
+        100% {
+          background-color: blue;
+        }
+      }
+
+      div {
+        width: 100%;
+        height: 150px;
+        background-color: whitesmoke;
+        animation-name: my-anumetion;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+        animation-duration: reverse;
+        animation-timing-function: ease-in-out;
+
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: small;
+        font-style: inherit;
+        text-align: center;
+        color: chartreuse;
+        border-radius: 60%;
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Hello This is my annamation</h1>
+      Animation is a method of photographing successive drawings, models, or even puppets, to create an illusion 
+      of movement in a sequence. Because our eyes can only retain an image for approximately 1/10 of a second, when
+      multiple images appear in fast succession, the brain blends them into a single moving image. 
+
+     In traditional animation, pictures are drawn or painted on transparent celluloid sheets to be photographed. Early 
+     cartoons are examples of this, but today, most animated movies are made with computer-generated imagery or CGI.
+
+     To create the appearance of smooth motion from these drawn, painted, or computer-generated images, frame rate, or 
+     the number of consecutive images that are displayed each second, is considered. Moving characters are usually shot
+      “on twos” which just means one image is shown for two frames, totaling in at 12 drawings per second. 12 frames per
+       second allows for motion but may look choppy. In the film, a frame rate of 24 frames per second is often used
+        for smooth motion.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: whitesmoke;
+        border: 1px solid black;
+        width: 380;
+        height: 380;
+        background-image: url(images/Background.pmg.png);
+      }
+      body {
+        background-image: url(images/dahlia.jpg);
+        background-color: royalblue;
+        background-repeat: round;
+      }
+      #div1 {
+        border: 3px solid black;
+        background: linear-gradient(-90deg, red, yellow);
+      }
+      #div2 {
+        height: 400px;
+        width: 350px;
+        background: radial-gradient(red 10%, blue 30%, whitesmoke);
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex pariatur, ad
+      fugit rem ut et doloremque, incidunt similique reiciendis iste, unde
+      maxime sapiente. Vel est fuga mollitia ab nam, alias sed voluptates
+      eligendi harum pariatur neque provident. Tenetur, perspiciatis! Laborum!
+    </p>
+
+    <p id="p2">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex pariatur, ad
+      fugit rem ut et doloremque, incidunt similique reiciendis iste, unde
+      maxime sapiente. Vel est fuga mollitia ab nam, alias sed voluptates
+      eligendi harum pariatur neque provident. Tenetur, perspiciatis! Laborum!
+    </p>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex pariatur, ad
+      fugit rem ut et doloremque, incidunt similique reiciendis iste, unde
+      maxime sapiente. Vel est fuga mollitia ab nam, alias sed voluptates
+      eligendi harum pariatur neque provident. Tenetur, perspiciatis! Laborum!
+    </p>
+
+    <div id="div1">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex pariatur,
+        ad fugit rem ut et doloremque, incidunt similique reiciendis iste, unde
+        maxime sapiente. Vel est fuga mollitia ab nam, alias sed voluptates
+        eligendi harum pariatur neque provident. Tenetur, perspiciatis! Laborum!
+      </p>
+    </div>
+
+    <div id="div2">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex pariatur,
+        ad fugit rem ut et doloremque, incidunt similique reiciendis iste, unde
+        maxime sapiente. Vel est fuga mollitia ab nam, alias sed voluptates
+        eligendi harum pariatur neque provident. Tenetur, perspiciatis! Laborum!
+      </p>
+
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex pariatur,
+        ad fugit rem ut et doloremque, incidunt similique reiciendis iste, unde
+        maxime sapiente. Vel est fuga mollitia ab nam, alias sed voluptates
+        eligendi harum pariatur neque provident. Tenetur, perspiciatis! Laborum!
+      </p>
+
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex pariatur,
+        ad fugit rem ut et doloremque, incidunt similique reiciendis iste, unde
+        maxime sapiente. Vel est fuga mollitia ab nam, alias sed voluptates
+        eligendi harum pariatur neque provident. Tenetur, perspiciatis! Laborum!
+      </p>
+    </div>
+  </body>
+</html>

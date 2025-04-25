@@ -1,0 +1,91 @@
+
+ <script>
+      console.log("Checking object type");
+      const myNumber = 42;
+      const myDate = new Date();
+
+      if (typeof myNumber === "number") {
+        console.log(myNumber);
+      }
+
+      if (typeof myDate === "object") {
+        console.log(myDate);
+      }
+
+      if (myDate instanceof Object) {
+        console.log(myDate);
+      }
+</script>
+
+
+<script>
+      console.log("Object literal");
+      const employee = {
+        employeeId: 101,
+        fName: "SSSSS",
+        lNAme: "TTTTT",
+        depertment: "IT",
+      };
+      console.log(employee);
+      console.log(
+        employee.employeeId +
+          " " +
+          employee.fName +
+          " " +
+          employee.lNAme +
+          " from " +
+          employee.depertment
+      );
+      employee.employeeId = 401;
+      employee["employeeId"] = 501;
+
+      console.log(employee.hasOwnProperty("fName"));
+      console.log(employee.hasOwnProperty("dateOfBirth"));
+      console.log(employee.hasOwnProperty("depertment"));
+      const emp = Object.keys(employee);
+      for (const property of emp) {
+        console.log(property);
+      }
+</script>
+
+
+<script>
+      const student = {
+        fName: "Tagin",
+        lName: "Akter",
+      };
+      const address = {
+        city: "Dhaka",
+        country: "Bangladesh",
+      };
+
+      const studentInfo = { ...student, ...address };
+      console.log(studentInfo);
+
+      const sInfo = Object.keys(studentInfo);
+      for (const s of sInfo) {
+        console.log(s);
+      }
+
+      const copyS = { ...studentInfo };
+      console.log(copyS);
+</script>
+
+
+<script>
+      const student1 = {
+        fName: "Tagin",
+        lName: "Mim",
+        testScores: [78, 88, 94, 88],
+      };
+
+      function coloneStudent(student1) {
+        const copyStudent = { ...student1 };
+        copyStudent.testScores = [...copyStudent.testScores];
+        return copyStudent;
+      }
+      const studentCopy = coloneStudent(student1);
+      studentCopy.testScores[2] = 95;
+      console.log(student1.testScores[2]);
+      console.log(studentCopy.testScores[2]);
+</script>

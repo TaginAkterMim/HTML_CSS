@@ -1,0 +1,218 @@
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        border: 1px solid black;
+        box-shadow: 8px 0 10px gray, 0 8px 10px gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">This is a div</div>
+  </body>
+</html>
+
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .invisible {
+        visibility: hidden;
+      }
+      div {
+        border: 5px solid black;
+        border-radius: 2px;
+        width: 300px;
+        height: 220px;
+        margin: 50px 50px 50px 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>This is the <span class="hidden">Hidden</span>Element</p>
+      <p>This is the <span class="invisible">Invisible</span>Element</p>
+    </div>
+  </body>
+</html>
+
+
+------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 3px solid black;
+        width: 300px;
+        height: 100px;
+        margin: 50px 10px 10px 350px;
+      }
+      .inline-block {
+        border: 2px solid red;
+        height: 40px;
+        display: inline-block;
+      }
+      .block {
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inline-block">I am the first chield</div>
+      <div class="inline-block">I am the sceond chield</div>
+      <div class="block">I am the third chield</div>
+    </div>
+  </body>
+</html>
+
+
+-----------------------------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .newspaper {
+        column-count: 3;
+        column-gap: 40px;
+        column-rule: 1px solid black;
+        column-width: 300px;
+      }
+
+      h1 {
+        column-span: all;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="newspaper">
+      <h1>lorem</h1>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, repellat.
+      Sequi repellat quia sit, rem necessitatibus vel minima accusamus vitae
+      laudantium recusandae ad assumenda nostrum, magnam facere dolore possimus,
+      veritatis nisi id temporibus eaque impedit neque minus tempore quo. Omnis
+      sunt alias corporis hic quisquam maiores voluptate ipsum nisi deleniti in!
+      Labore eveniet excepturi, autem, ullam perspiciatis et accusantium quam
+      assumenda saepe voluptate modi dicta odio impedit. Totam repellendus enim
+      sint minus error consequuntur ducimus, sapiente fuga, eius deleniti
+      exercitationem consequatur excepturi omnis delectus odio quos facere
+      recusandae. Doloremque facere debitis, illum qui cumque consequuntur ullam
+      hic in alias esse.
+    </div>
+  </body>
+</html>
+
+
+
+-------------------------------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: rgb(255, 0, 0);
+        padding: 20px;
+        margin: 10px;
+      }
+
+      .container.opacity {
+        opacity: 0.5;
+      }
+
+      .container.transparent {
+        background-color: rgba(255, 0, 0, 0.5);
+      }
+
+      .chile {
+        border: 1px solid rgb(17, 17, 17);
+      }
+      .cont1 {
+        border: 1px solid blue;
+        width: 200px;
+        height: 100px;
+        /* overflow: hidden; */
+        /* overflow: scroll; */
+        overflow: auto;
+      }
+
+      .chile1 {
+        border: 1px solid red;
+        height: 150px;
+        background-color: aqua;
+        margin: 10px;
+      }
+      .test2 {
+        position: relative;
+        top: 30px;
+        left: 50px;
+        transform: saepe(2, 3);
+        transform: rotate(160deg);
+      }
+
+      .test21 {
+        transform: rotate(190deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="chile">I am the content</div>
+    </div>
+    <div class="container opacity">
+      <div class="chile">I am the content</div>
+    </div>
+    <div class="container transparent">
+      <div class="chile">I am the content</div>
+    </div>
+
+    <div class="cont1">
+      <div class="chile1">I am the content</div>
+    </div>
+
+    <div class="test2">First paragraph</div>
+    <div class="test21">Sceond paragraph</div>
+  </body>
+</html>
+
+
+
+-------------------------------------------------------------------------------------
+

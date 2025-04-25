@@ -1,0 +1,92 @@
+
+<script>
+      console.log("Requesting remote data with fetch & error hendel");
+
+      const url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
+      fetch(url)
+        .then((res) => res.json())
+        .then((data) => console.log(data));
+
+      async function fetchReq() {
+        const req = await fetch(url);
+        const data = await req.json();
+        console.log(data);
+      }
+      fetchReq();
+</script>
+
+
+
+<script>
+      const url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KE";
+      async function fetchReqWithError() {
+        const res = await fetch(url);
+        if (res.status >= 200 && res.status < 400) {
+          const data = await res.json();
+          console.log(data);
+        } else {
+          console.log(`${res.statusText}: ${res.status} error`);
+        }
+      }
+      fetchReqWithError();
+
+      console.log("add a Y at the end of the url \n to fixed the link");
+</script>
+
+
+
+<script>
+      const url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
+      async function fetchReqWithTryCatch() {
+        try {
+          const res = await fetch(url);
+          if (res.status >= 200 && res.status < 400) {
+            const data = res.json();
+            console.log(data);
+          } else {
+            console.log(`${res.statusText}: ${res.status} error`);
+          }
+        } catch (error) {
+          console.log(error);
+        }
+      }
+      fetchReqWithTryCatch();
+</script>
+
+
+
+<script>
+      console.log("XML http request");
+      const url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
+      const req = new XMLHttpRequest();
+      req.open("GET", url);
+      req.send();
+      req.onload = () => {
+        if (req.status >= 200 && req < 400) {
+          const data = JSON.parse(req.response);
+          console.log(data);
+        } else {
+          console.log(`${req.statusText}:${req.status} error`);
+        }
+      };
+      req.onerror = () => console.log(req.statusText);
+</script>
+
+
+
+<script>
+      console.log("Parsing returned json");
+      const jsonObj = '{"test":"value1","test2":5.97,"test3":0}';
+      const obj = JSON.parse(jsonObj, (key, value) => {
+        if (typeof value === "number") {
+          if (value === 0) {
+            value = false;
+          } else if (value === 1) {
+            value = true;
+          }
+        }
+        return value;
+      });
+      console.log(obj);
+</script>
+

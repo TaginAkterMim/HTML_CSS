@@ -1,0 +1,97 @@
+
+<body>
+    <button id="btn">Click</button>
+<script>
+      console.log("Passing a function as an argument");
+      document
+        .getElementById("btn")
+        .addEventListener("click", buttenClick, false);
+
+      function buttenClick() {
+        setTimeout(showMassage, 2000);
+      }
+      function showMassage() {
+        alert("You have clicked the butten 2 second ago");
+      }
+   </script>
+</body>
+
+
+ <script>
+      console.log("Arrow function");
+      const numbers = [2, 4, 6, 8, 10];
+
+      function squarsNum(n) {
+        return n ** 2;
+      }
+      const squre = numbers.map(squarsNum);
+
+      console.log(squre);
+
+      const squares = numbers.map((n) => n ** 2);
+      console.log(squares);
+</script>
+
+
+ <script>
+      function dateDifferenceInSeconds(
+        newerDate,
+        olderDate,
+        { discardTime, discardYers, precision } = {}
+      ) {
+        if (discardTime) {
+          newerDate = newerDate.setHours(0, 0, 0, 0);
+          olderDate = newerDate.setHours(0, 0, 0, 0);
+        }
+        if (discardYers) {
+          newerDate.setYear(0);
+          olderDate.setYear(0);
+        }
+        const differenceInSeconds =
+          (newerDate.getTime() - olderDate.getTime()) / 1000;
+        return differenceInSeconds.toFixed(precision);
+      }
+
+      const newDate = new Date();
+      const oldDate = new Date(2010, 1, 10);
+      let difference = dateDifferenceInSeconds(newDate, oldDate);
+      console.log(difference);
+      difference = dateDifferenceInSeconds(newDate, oldDate, {
+        discardYers: true,
+      });
+      console.log(difference);
+</script>
+
+
+<script>
+      function creatCounter() {
+        let count = 0;
+        function counter() {
+          count += 1;
+          console.log(count);
+        }
+        return counter;
+      }
+      const counterFunction = creatCounter();
+      counterFunction();
+      counterFunction();
+      counterFunction();
+      counterFunction();
+</script>
+
+
+<script>
+      console.log("Generator function");
+      function* generaterValues() {
+        yield 456768;
+        yield 123.321;
+        yield "flying";
+        return "This is the end";
+      }
+      for (const g of generaterValues()) {
+        console.log(g);
+      }
+      
+</script>
+
+

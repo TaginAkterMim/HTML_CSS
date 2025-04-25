@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Chapter11.css">
+
+    <style>
+      #first {
+  color: red;
+  font-size: 30px;
+}
+
+#second {
+  color: blue;
+  font-size: 60px;
+}
+
+.all {
+  background-color: coral;
+}
+
+.another {
+  background-color: cadetblue;
+}
+
+:link {
+  color: rgb(65, 253, 65);
+}
+
+:visited {
+  color: rgb(224, 215, 247);
+}
+
+/* :hover {
+  background-color: red;
+} */
+
+:disabled {
+  background-color: rgba(224, 177, 55, 0.575);
+}
+
+    </style>
+  <body>
+    <div>
+      <h1>Hello Wrld</h1>
+      <p class="all" id="first">Some text</p>
+    </div>
+    <p class="another" id="second">Another text</p>
+    <a href="Test.html" target="_blank">My Web Site</a>
+    <input id="name" placeholder="enter first name" disabled />
+  </body>
+</html>
+
+

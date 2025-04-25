@@ -1,0 +1,68 @@
+
+<script>
+	console.log("Accuracy_Decimal_Value");
+      
+      const currentBalance = 63274.23;
+      const transctionAmount = 25.02;
+      const updateBalance = currentBalance - transctionAmount;
+      console.log(updateBalance);
+      console.log(updateBalance.toFixed());
+</script>
+
+
+
+<script>
+      console.log("Converting_String_To_Number");
+      const stringData = "25";
+      const num = 15;
+      console.log(stringData);
+
+      const numberData = Number(stringData);
+      console.log(numberData);
+
+      if (Number.isNaN(numberData)) {
+        console.log("number");
+      } else {
+        console.log("string");
+      }
+
+      const numData = parseFloat(stringData);
+      console.log(numData);
+</script>
+
+
+
+<script>
+      console.log("Convertion_Degrees_&_Radians");
+
+      const radians = 90 * (Math.PI / 180);
+      console.log(radians);
+
+      const degrees = radians * (180 / Math.PI);
+      console.log(degrees);
+
+      const radius = degrees * (Math.PI / 180);
+      const arclangth = radians * radius;
+      console.log(arclangth);
+</script>
+
+
+
+<script>
+      console.log("Random_Number");
+
+      const randomNumber = Math.floor(Math.random() * 100) + 1;
+      console.log(randomNumber);
+
+      const randomNumber1 = Math.floor(2.4564578) + 1;
+      console.log(randomNumber1);
+
+      const num1 = 19.48938;
+      const roundNum = Math.round(num1);
+      console.log(roundNum);
+
+      const numToRound = num1 * 10 ** 2;
+      let roundedNum = Math.round(numToRound);
+      roundedNum = roundedNum / 10 ** 2;
+      console.log(roundedNum);
+</script>

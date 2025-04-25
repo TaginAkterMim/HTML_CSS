@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        text-decoration-line: line-through;
+        border: 2px solid black;
+      }
+      p {
+        text-decoration-color: rosybrown;
+        text-decoration-line: underline;
+        text-decoration-thickness: 5px;
+      }
+      .p1 {
+        text-decoration-style: dotted;
+      }
+      .p2 {
+        text-decoration-style: dashed;
+      }
+      .p3 {
+        text-decoration-style: wavy;
+      }
+      .test1 {
+        white-space: nowrap;
+        width: 200px;
+        border: 1 px solid black;
+        overflow: hidden;
+        text-overflow: clip;
+      }
+      .test2 {
+        white-space: nowrap;
+        width: 200px;
+        border: 1 px solid black;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .test-word-erap {
+        width: 200px;
+        border: 1px solid;
+        word-wrap: break-word;
+      }
+      div:first-child {
+        letter-spacing: -1px;
+        font-variant: small-caps;
+      }
+      div:last-child {
+        letter-spacing: 15px;
+        line-height: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="p">This is a Paragraph</p>
+
+    <p class="p1">This is another Paragraph</p>
+    <p class="p2">This is another Paragraph</p>
+    <p class="p3">This is another Paragraph</p>
+
+    <p class="test1">text overflow:clip - this is some text</p>
+    <p class="text2">text overflow:elipsis - this is some text</p>
+
+    <p class="test-word-erap">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, quas
+      cupiditate? Totam nobis consequuntur voluptate incidunt ad culpa
+      voluptatibus modi perspiciatis, quidem vero sunt, vitae alias corporis,
+      dolorum laboriosam? Voluptas veritatis totam porro praesentium quisquam
+      non autem corrupti. Numquam, perspiciatis.
+    </p>
+
+    <div>
+      <p>This is a paragraph for testing</p>
+      <p>This is a paragraph for testing</p>
+    </div>
+  </body>
+</html>

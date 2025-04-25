@@ -1,0 +1,74 @@
+------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend style="text-align: center">My Address is</legend>
+      <address>
+        <p>17 .No Bangshal Road Dhaka 1100</p>
+        <p>Phobe number : 01923456789</p>
+        <p>Email : abc@gmail.com</p>
+      </address>
+    </fieldset>
+  </body>
+</html>
+
+
+------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <details>
+      <summary>Lorem</summary>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+        architecto necessitatibus labore tempore iure ipsum, iste amet
+        distinctio cumque pariatur. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Quas, molestias. Consequuntur tempore porro nesciunt
+        praesentium iste voluptas suscipit dolorum sunt?
+      </p>
+    </details>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Artical about lorem</h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique fuga
+      accusantium,
+      <strong
+        >perspiciatis praesentium obcaecati, iste architecto omnis neque enim
+        sunt exercitationem</strong
+      >
+      ab blanditiis ipsa delectus velit culpa, eligendi dolor libero!
+    </p>
+  </body>
+</html>
+
+
+

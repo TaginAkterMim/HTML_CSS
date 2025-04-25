@@ -1,0 +1,123 @@
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <svg width="300" height="300">
+        <line x1="0" y1="0" x2="200" y2="100" stroke="red" stroke-width="2" />
+      </svg>
+      <svg width="300" height="300">
+        <line x1="0" y1="200" x2="0" y2="100" stroke="red" stroke-width="2" />
+      </svg>
+      <svg width="300" height="300">
+        <line x1="200" y1="200" x2="0" y2="100" stroke="red" stroke-width="2" />
+      </svg>
+    </div>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <svg width="600" height="250">
+      <rect x="150" y="100" width="180" height="150" />
+    </svg>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <svg width="300" height="250">
+      <circle cx="100" cy="50" r="40" stroke="red" stroke-width="10" />
+    </svg>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <svg width="300" height="250" style="border: 5px solid red">
+      <polygon points="100,10 40,180 190,60 10,60 160,180" fill="blue" />
+    </svg>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="newCanvas"
+      width="200"
+      height="200"
+      style="border: 2px solid black"
+    >
+    </canvas>
+
+    <script>
+      var c = document.getElementById("newCanvas");
+      var ctx = c.getContext("2d");
+      ctx.arc(90, 88, 40, 0, 2 * Math.PI);
+      ctx.stroke();
+      ctx.strokeStyle = "orange";
+
+      ctx.font = "25px arial";
+      ctx.fillText("Hello", 60, 100);
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 100);
+      ctx.stroke();
+    </script>
+  </body>
+</html>
+
+
+------------------------------------------------------------------------------------
+

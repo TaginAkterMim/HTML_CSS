@@ -1,0 +1,130 @@
+
+<script>
+      console.log('Creste a class')
+      class Vehicle {
+        constructor(Name, Year) {
+          this.Name = Name;
+          this.Year = Year;
+        }
+      }
+      const newVehicle = new Vehicle("BMW", 2023);
+      console.log(newVehicle);
+      console.log(newVehicle.Year);
+</script>
+
+
+<script>
+      console.log("Addibg a property in class");
+      class Vehicle {
+        constructor(Name, Model, Year) {
+          this.Name = Name;
+          this.Model = Model;
+          this.Year = Year;
+        }
+        get model() {
+          if (typeof this.Model === "string") {
+            console.log(`Vehicle model is ${this.Model} ${this.Year}`);
+          } else {
+            console.log("invalid model");
+          }
+        }
+      }
+
+      const audiVehicle = new Vehicle("BMW", "Rx24", 2024);
+      console.log(audiVehicle);
+      console.log(audiVehicle.model);
+</script>
+  
+
+<script>
+      console.log("Class to string representation");
+      class Vehicle {
+        constructor(Name, Model, Year) {
+          this.Name = Name;
+          this.Model = Model;
+          this.Year = Year;
+        }
+        toString() {
+          return `Vehicle name : ${this.Name} Vehicle model : ${this.Model}
+          Vehicle Year : ${this.Year}`;
+        }
+      }
+      const fordVehicle = new Vehicle("Audi", "GTR 10", 2020);
+      console.log(fordVehicle);
+      console.log(fordVehicle.toString());
+</script>
+ 
+
+<script>
+      console.log("Constructor Pattern Custrm class");
+      function Address(country, city, streetNo) {
+        this.country = country;
+        this.city = city;
+        this.streetNo = streetNo;
+      }
+      const myAddress = new Address(
+        "Bangladesh",
+        "Dhaka",
+        "17 no Bangshal Road"
+      );
+      console.log(myAddress);
+</script>
+
+
+<script>
+      console.log('ststic method object creation')
+      class student {
+        constructor(name, roll) {
+          this.name = name;
+          this.roll = roll;
+        }
+        static student2(s, name, roll) {
+          return new student(name, roll, s.name, s.roll);
+        }
+      }
+      const studentA = new student("TM", 101);
+      console.log(studentA);
+      const studentAInfo = student.student2(student, "SH", 120);
+      console.log(studentAInfo);
+</script>
+
+
+<script>
+  console.log("Inheriting Function from Another Class");
+  class parent {
+    getArea() {
+      return null;
+    }
+  }
+  class square extends parent {
+    constructor(height, width) {
+      super();
+      this.height = height;
+      this.width = width;
+    }
+    getArea() {
+      return this.height * this.width;
+    }
+  }
+  class triangle extends parent {
+    constructor(base, height) {
+      super();
+      this.height = height;
+      this.base = base;
+    }
+    getArea() {
+      return (this.base * this.height) / 2;
+    }
+  }
+  const triArea = new triangle(15, 8);
+  if (triArea instanceof parent) {
+    console.log("true");
+  }
+  console.log(triArea.getArea());
+
+  const squareArea = new square(15, 8);
+  if (squareArea instanceof parent) {
+    console.log("true");
+  }
+  console.log(squareArea.getArea());
+</script>

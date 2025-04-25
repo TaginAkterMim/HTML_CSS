@@ -1,0 +1,75 @@
+------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    video{
+      margin-left: 320px;
+      margin-top: 180px;
+    }
+  </style>
+</head>
+<body>
+  <video width="320" height="300" controls loop>
+    <source src="Project_HTML/video/movie1.mp4" type="video/mp4" />
+    This browser does not support HTML5</video
+</body>
+</html>
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      video {
+        margin-left: 320px;
+        margin-top: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <video width="320" height="300" controls loop>
+      <source src="Project_HTML/video/movie2.mp4" type="video/mp4" />
+      This browser does not support HTML5
+    </video>
+  </body>
+</html>
+
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      audio {
+        margin-left: 320px;
+        margin-top: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <audio controls loop>
+      <source src="Project_HTML/audio/Horse_Cry.mp3" type="audio/mp3" />
+    </audio>
+  </body>
+</html>
+
+
+------------------------------------------------------------------------------------

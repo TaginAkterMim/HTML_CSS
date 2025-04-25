@@ -1,0 +1,165 @@
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bid {
+        height: 1000px;
+        border: 2px solid blue;
+      }
+
+      .fixed {
+        position: fixed;
+        right: 30px;
+        top: 30px;
+        width: 100px;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Normal Element</div>
+    <div class="fixed">I am fixed</div>
+    <div class="bid">A big element</div>
+  </body>
+</html>
+
+
+
+-------------------------------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 200px;
+        height: 200px;
+        border: 1px dashed black;
+      }
+
+      .normal {
+        border: 1px dashed blue;
+      }
+
+      .releative {
+        position: relative;
+        border: 2px solid red;
+        left: 30px;
+        top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="normal">This is a normal element</div>
+      <div class="releative">This is a releative element</div>
+    </div>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .posotion {
+        position: relative;
+        border: 2px solid black;
+        width: 200px;
+        height: 200px;
+      }
+
+      .non-position {
+        border: 2px dashed red;
+        width: 150px;
+        height: 150px;
+      }
+
+      .absolute {
+        background-color: rgb(178, 160, 196);
+        border: 2px solid yellow;
+        position: absolute;
+        right: 30px;
+        top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="posotion">
+      <div class="non-position">
+        <div class="absolute">I am Absalute</div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 200px;
+        height: 200px;
+        overflow: auto;
+      }
+
+      .sticky {
+        position: sticky;
+        top: 0;
+        border: 2px solid red;
+        background-color: rgb(240, 184, 184);
+      }
+      body {
+        margin: 100px 10px 10px 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+        mollitia.
+      </p>
+      <div class="sticky">I am sticky</div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ullam
+        hic distinctio quod quasi accusantium totam illum obcaecati veritatis
+        voluptas? "Top:0
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit."remove sticky"
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+        voluptatibus?
+      </p>
+    </div>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------------------

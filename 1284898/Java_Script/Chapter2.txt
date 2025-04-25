@@ -1,0 +1,149 @@
+
+<script>
+      console.log("Case-Insensitive_string");
+      const a = "HELLO";
+      const b = "hello";
+
+      if (a.toLowerCase() === b.toLowerCase()) {
+        console.log(`From ${a} to ${b}`);
+        console.log(`From ${b} to ${a}`);
+      }
+
+      const storyText = "I was happy to hear this happy news";
+      console.log(storyText);
+      const chanceText = storyText.replaceAll("happy", "sad");
+      console.log(chanceText);
+</script>
+
+
+<script>
+console.log("Checking_existing");
+
+      const value = "100";
+
+      if (typeof value === "string") {
+        console.log(value);
+      }
+
+      if (typeof value === "string" && value.length > 0) {
+        console.log(value);
+      }
+
+      if (typeof value === "number") {
+        console.log(value);
+      } else {
+        console.log("not a number but a string");
+      }
+
+      if (typeof value === "string" || String.prototype.isPrototypeOf(value)) {
+        console.log(value);
+      }
+</script>
+
+
+<script>
+      console.log("Concatenation");
+
+      const fName = "Tagin";
+      const lName = "Akter";
+      const team = "IT";
+      const hireDate = new Date(2024, 4, 13);
+
+      const employeeDetail =
+        "Our team includes " +
+        fName +
+        " " +
+        lName +
+        " who works on the " +
+        team +
+        " team. Thay've been a team member since " +
+        hireDate +
+        "!";
+      console.log(employeeDetail);
+
+      const employeeDetail1 = `Our team includes ${fName} ${lName} who works on the ${team} team. Thay've been a team member since ${hireDate.getFullYear(
+        hireDate
+      )} !`;
+      console.log(employeeDetail1);
+</script>
+
+
+<script>
+      console.log("Converting_number_value");
+
+      const num = 20;
+      console.log(num);
+
+      const sonmString = num.toString();
+      console.log(sonmString);
+
+      const num1 = 12.037;
+      console.log(num1);
+
+      const numFixed = num1.toFixed();
+      console.log(numFixed);
+
+      const numExponential = num1.toExponential();
+      console.log(numExponential);
+
+      const numPrecision = num1.toPrecision();
+      console.log(numPrecision);
+
+      const numLocaleString = num1.toLocaleString();
+      console.log(numLocaleString);
+</script>
+
+
+<script>
+      console.log("Regular_Expression");
+
+      const ogString = "Now the game begin, this game ends";
+      console.log(ogString);
+      const regEx = /g\w{2}e/g;
+      const newString = ogString.replaceAll(regEx, "story");
+      console.log(newString);
+      const trimedString = ogString.trim();
+      console.log(trimedString);
+</script>
+
+
+
+<script>
+      console.log("Spesial_Characters");
+
+      const favoriteMovies = "My favorite movie is 'Animal Farm' .";
+      alert(favoriteMovies);
+
+      const favoriteMovies1 = "My favorite movie is  \n 'Animal Farm' .";
+      alert(favoriteMovies1);
+
+      const favoriteMovies2 = "My favorite movie is \t 'Animal Farm' .";
+      alert(favoriteMovies2);
+
+      const favoriteMovies3 = "My favorite movie is \b 'Animal Farm' .";
+      alert(favoriteMovies3);
+
+      const favoriteMovies4 = "My favorite movie is \r'Animal Farm' .";
+      alert(favoriteMovies4);
+
+      const favoriteMovies5 = "My favorite movie is \xdd 'Animal Farm' .";
+      alert(favoriteMovies5);
+
+      alert(favoriteMovies6);
+</script>
+
+
+
+<script>
+      console.log("Validating_Email");
+
+      const emailValid = "taginmim1999@gmail.com";
+      const emailInvalid = "taginmim1999@gmail.com";
+      const Regex = /\S+@\S+\.\S+/;
+      if (Regex.test(emailValid)) {
+        console.log("passed");
+      } else if (Regex.test(emailInvalid)) {
+        console.log("failed");
+      }
+</script>
+

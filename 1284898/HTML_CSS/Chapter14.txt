@@ -1,0 +1,153 @@
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #parent {
+        border: 2px solid black;
+        margin: auto;
+      }
+      #child {
+        border: 3px solid blue;
+        margin-top: 50px;
+        margin-right: 30px;
+        margin-bottom: 50px;
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child">
+        The element have margin 50px,margin right 30px,margen bottom 50px and
+        margin left 30px
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #parent1 {
+        border: 2px solid brown;
+        height: 100px;
+      }
+      #child1 {
+        border: 2px dotted red;
+        width: 200px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent1">
+      <div id="child1">This element has an auto margrn</div>
+    </div>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #parent2 {
+        border: 2px solid solid purple;
+      }
+      #child-one {
+        border: 1px solid black;
+        margin: 30px;
+      }
+      #child-two {
+        border: 1px solid rgb(106, 208, 10);
+        margin: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent2">
+      <div id="child-one">Lorem ipsum dolor sit amet. margin 30px</div>
+      <div id="child-two">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+        nulla?.margin 60px
+      </div>
+    </div>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        outline: 5px dotted blue;
+        border: 1px solid violet;
+        border-radius: 15px;
+      }
+      p[id] {
+        padding: 20px;
+        width: 100px;
+        height: 50px;
+        background-color: rgb(95, 243, 95);
+      }
+      #p1 {
+        border-radius: 10px;
+      }
+      #p2 {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is a paragraph</p>
+    <br />
+
+    <p>border-radius 10px</p>
+    <p id="p1"></p>
+
+    <p>border-radius 50px</p>
+    <p id="p2"></p>
+
+    <pre id="myEle"></pre>
+    <span id="result"></span>
+    <script>
+      var myElement = document.getElementById("myEle");
+      var width = myElement.offsetWidth;
+      var height = myElement.offsetHeight;
+      document.getElementById("result").innerHTML =
+        "Element size width =" + width + ",height =" + height;
+    </script>
+  </body>
+</html>
+
+
+-------------------------------------------------------------------------------------
+

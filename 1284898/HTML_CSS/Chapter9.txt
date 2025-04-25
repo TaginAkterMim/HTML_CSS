@@ -1,0 +1,203 @@
+-------------------------------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onresize="onResize()" onload="lodeEvent()">
+    <h2>My Web Page</h2>
+
+    <script>
+      function lodeEvent() {
+        alert("This page just lode");
+      }
+      function onResize() {
+        alert("You changed the page size");
+      }
+    </script>
+  </body>
+</html>
+
+
+
+-------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="fname">First Name</label>
+    <input
+      onfocus="eventHandling(this)"
+      id="fname"
+      onblur="eventHandling1()"
+    /><br />
+    <label>Select Car</label>
+    <select id="mySelect" onchange="eventHandling2()">
+      <option value="Audi">Audi</option>
+      <option value="BMW">BMW</option>
+      <option value="Volvo">Volvo</option>
+      <option value="Marcedes">Marcedes</option></select
+    ><br />
+    <label for="mobileNo">Mobile Number</label>
+    <input
+      type="text"
+      name="mobileNo"
+      id="mobileNo"
+      oninput="eventHandling3()"
+    />
+    <h1 id="output"></h1>
+    <br />
+
+    <p>This is a keybord event use the keybord keys inside the texarea</p>
+    <textarea name="txt" id="txt" onkeydown="keyDownEvent()"> </textarea><br />
+
+    <script>
+      function eventHandling(input) {
+        input.style.background = "yellow";
+      }
+      function eventHandling1() {
+        var x = document.getElementById("fname");
+        alert("Hello " + x.value);
+      }
+      function eventHandling2() {
+        var car = document.getElementById("mySelect").value;
+        alert("You have selected :" + car);
+      }
+      function eventHandling3() {
+        var mobileno = document.getElementById("mobileNo").value;
+        document.getElementById("output").innerHTML = mobileno;
+      }
+      function keyDownEvent() {
+        alert("You typed a key inside the textarea");
+      }
+    </script>
+  </body>
+</html>
+
+
+
+------------------------------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>onclick event</legend>
+      <button onclick="eventHandler()">Click Here</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>ondblclick event</legend>
+      <button ondblclick="eventHandler2()">Click Here</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>onmousemove</legend>
+      <p onmousemove="zoomIn(this)">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod vero
+        consectetur placeat eligendi numquam nam accusantium voluptatibus
+        veritatis, sit ullam.
+      </p>
+    </fieldset>
+
+    <script>
+      function eventHandler() {
+        alert("You clicked the butten");
+      }
+      function eventHandler2() {
+        alert("You double clicked the buttan");
+      }
+      function zoomIn(z) {
+        var oldSize = z.style["font-size"];
+        if (oldSize == 0) {
+          oldSize = 20;
+        } else {
+          oldSize = parseFloat(oldSize.replace("px", ""));
+        }
+        z.style["font-size"] = oldSize + 0.1 + "px";
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>onmousedown & onmouseup</legend>
+      <p
+        onmousedown="mDown()"
+        onmouseup="mUp()"
+        id="p1"
+        style="font-size: large"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+        quis. <br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
+        reprehenderit!
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>onmouseover & onmouseout</legend>
+      <p
+        onmouseover="increaseFontSize(this)"
+        onmouseout="decriseFontSize(this)"
+      >
+        This phagraph font size is 40px
+        <br /><br />
+        This phagraph font size is 20px
+      </p>
+    </fieldset>
+
+    <script>
+      function mDown() {
+        document.getElementById("p1").style.color = "red";
+      }
+      function mUp() {
+        document.getElementById("p1").style.color = "blue";
+      }
+      function increaseFontSize(x) {
+        x.style["font-size"] = "40px";
+      }
+      function decriseFontSize(y) {
+        y.style["font-size"] = "20px";
+      }
+    </script>
+  </body>
+</html>
+
+
+------------------------------------------------------------------------------------
+
+
+
